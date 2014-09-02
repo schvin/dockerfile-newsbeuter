@@ -16,12 +16,12 @@ echo "http://newsbeuter.wordpress.com/feed/" > urls
 echo "auto-reload yes" > config
 echo "refresh-on-startup yes" >> config
 #
-# build docker container:
+# build docker container, if you don't want to run from the Docker hub:
 docker build -t newsbeuter .
 ```
 
 #### Routine use:
 ```
 cd ~/newsbeuter-conf
-docker run -it -v `pwd`:/home/rss/.newsbeuter:rw newsbeuter
+docker run -it --rm=true -v `pwd`:/home/rss/.newsbeuter:rw schvin/newsbeuter
 ```
