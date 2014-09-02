@@ -16,7 +16,7 @@ echo "http://newsbeuter.wordpress.com/feed/" > urls
 echo "auto-reload yes" > config
 echo "refresh-on-startup yes" >> config
 #
-# build docker container, if you don't want to run from the Docker hub:
+# build docker container, only if you don't want to run from the Docker hub:
 docker build -t newsbeuter .
 ```
 
