@@ -1,4 +1,4 @@
-FROM ubuntu:trusty
+FROM ubuntu:latest
 MAINTAINER George Lewis <schvin@schvin.net>
 
 ENV REFRESHED_AT 2014-11-01
