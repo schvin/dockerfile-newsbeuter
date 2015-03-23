@@ -1,7 +1,7 @@
 FROM ubuntu:latest
 MAINTAINER George Lewis <schvin@schvin.net>
 
-ENV REFRESHED_AT 2014-12-23
+ENV REFRESHED_AT 2015-03-23
 RUN apt-get update --fix-missing -y && apt-get upgrade -y 
 RUN apt-get install -y newsbeuter
 
